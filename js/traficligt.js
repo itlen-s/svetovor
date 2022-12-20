@@ -18,11 +18,16 @@ const NEXT_LIGHT = {
 
 let currentLigth = LIGHTS.red;
 
-function switchLight()  {
+function switchLight(node)  {
+    const currentClass = CLASSES_BY_LIGHT[currentLigth];
+    const nextlight = NEXT_LIGHT[currentLigth];
+    const nextClass = CLASSES_BY_LIGHT[nextlight];
+
     currentLigth = NEXT_LIGHT[currentLigth];
-    console.log(currentLigth);
+
+    node.classList.replace(currentClass, nextClass);
 };
 
 function initLighttraficligt(node) {
-    node.classlist.add[CLASSES_BY_LIGHT[currentLigth]];
+    node.classList.add(CLASSES_BY_LIGHT[currentLigth]);
 }
