@@ -1,0 +1,19 @@
+.traficligt {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.traficligt_green {
+    background-color: green;
+}
+
+.traficligt_yellow {
+    background-color: yellow;
+}
+
+.traficligt_red {
+    background-color: red;
+}
+
